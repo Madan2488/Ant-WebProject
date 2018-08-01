@@ -6,7 +6,7 @@ try{
     }
    
         stage('build'){
-        sh 'ant -f build-mt.xml'
+        bat 'ant -f build-mt.xml'
     }
      stage('Test'){
       /*  sh 'mvn test' */
@@ -25,7 +25,9 @@ try{
     stage('Deploy-prod'){
         echo 'Deployed to prod'
     }
-    
+    stage('Deploy-to-Tomcat'){
+        bat 'scp target/*.war D:\DevOPs\softwares\apache-tomcat-8.5.32-windows-x64\apache-tomcat-8.5.32\webapps'
+    }
     stage('Email'){
      body_msg = ''' Jenkins Job success 
    
