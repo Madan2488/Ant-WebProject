@@ -41,12 +41,14 @@ try{
    echo 'Some error occured, Please verify' 
    throw error
 }
-/* node{
-/* stag('build'){
-/* if (isUnix()){
- /* sh "mvn clean package"
-/* }else{
-/* bat "mvn clean package"
-/* }
-/* }
-/* }
+/* 
+node{
+ stag('build'){
+ if (isUnix()){
+  sh "mvn clean package"
+ }else{
+ bat "mvn clean package"
+ }
+ }
+}
+*/
