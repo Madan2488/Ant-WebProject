@@ -33,7 +33,7 @@ try{
     Thanks
     Jenkins
     '''
-   mail bcc: '', body: body_msg, cc: '', from: '', replyTo: '', subject: 'Job Success', to: 'madan5.ctr@gmail.com'
+   mail bcc: '', body: body_msg, cc: '', from: 'madans0788@gmail.com', replyTo: 'madans0788@gmail.com', subject: 'Job Success', to: 'madan5.ctr@gmail.com'
    
     }
   }
