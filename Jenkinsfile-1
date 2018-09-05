@@ -3,7 +3,7 @@ try{
     echo 'Build Started'
     stage('Checkout'){
     git credentialsId: '10b361b1-44a2-4eaa-aea0-294ef9428d18', url: 'https://github.com/Madan2488/Ant-WebProject.git'
-         /* git branch: 'master', credentialsId: 'bitbucket', url: 'https://github.com/Madan2488/Ant-WebProject.git'
+         /* git branch: 'master', credentialsId: 'bitbucket', url: 'https://github.com/Madan2488/Ant-WebProject.git' */
     }
    
         stage('build'){
