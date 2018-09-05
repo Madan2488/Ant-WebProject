@@ -2,7 +2,8 @@ try{
     node {
     echo 'Build Started'
     stage('Checkout'){
-         git branch: 'master', credentialsId: 'bitbucket', url: 'https://github.com/Madan2488/Ant-WebProject.git'
+    git credentialsId: '10b361b1-44a2-4eaa-aea0-294ef9428d18', url: 'https://github.com/Madan2488/Ant-WebProject.git'
+         /* git branch: 'master', credentialsId: 'bitbucket', url: 'https://github.com/Madan2488/Ant-WebProject.git'
     }
    
         stage('build'){
@@ -40,12 +41,12 @@ try{
    echo 'Some error occured, Please verify' 
    throw error
 }
-// node{
-// stag('build'){
-// if (isUnix()){
- // sh "mvn clean package"
-// }else{
-// bat "mvn clean package"
-// }
-// }
-// }
+/* node{
+/* stag('build'){
+/* if (isUnix()){
+ /* sh "mvn clean package"
+/* }else{
+/* bat "mvn clean package"
+/* }
+/* }
+/* }
